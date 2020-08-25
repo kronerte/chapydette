@@ -174,7 +174,7 @@ def setup(X, gram, n_cp, kernel_type, bw, min_dist):
             dists = sklearn.metrics.pairwise.pairwise_distances(np.sqrt(X)).reshape(-1)
         elif kernel_type.lower() == 'gaussian-tv':
             dists = scipy.spatial.distance.cdist(X, X, 'cityblock')
-        print()
+        bw = np.median(dists)
     elif gram is None and bw is None and kernel_type.lower() in ['chi-squared']:
         raise ValueError('You must specify a bandwidth for the chi-squared kernel.')
 

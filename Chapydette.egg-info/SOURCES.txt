@@ -1,0 +1,13 @@
+setup.py
+Chapydette.egg-info/PKG-INFO
+Chapydette.egg-info/SOURCES.txt
+Chapydette.egg-info/dependency_links.txt
+Chapydette.egg-info/requires.txt
+Chapydette.egg-info/top_level.txt
+chapydette/__init__.py
+chapydette/compute_gram.c
+chapydette/cp_estimation.py
+chapydette/feature_generation.py
+chapydette/mkcpe.c
+chapydette/mmd_cpd.c
+chapydette/utils.py

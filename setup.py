@@ -24,12 +24,12 @@ setup(name='Chapydette',
       package_data={
           'chapydette': ["chapydette/*.pxd"],
       },
-      ext_modules=cythonize(extensions),
+      ext_modules=cythonize(extensions,  compiler_directives={"language_level" : "3"}),  #Modification for Centos7
       include_dirs=['.', 'chapydette', np.get_include()],
       install_requires=[
           'Cython',
           'numpy',
           'scipy',
-          'scikit-learn',
+        #  'scikit-learn', --> LightChapydette
           ],
       )
